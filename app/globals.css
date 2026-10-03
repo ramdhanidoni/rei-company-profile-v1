@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{scroll-behavior:smooth}
+body{background:#1b0a33;color:#fbf6ff}
+@keyframes float{to{transform:translate(8vmax,6vmax) scale(1.18)}}
+.animate-float{animation:float 18s ease-in-out infinite alternate}
+.animate-floatSlow{animation:float 24s ease-in-out infinite alternate}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.animate-marquee{animation:marquee 38s linear infinite;width:max-content}
+@keyframes shimmer{to{background-position:-240% 0}}
+.gold-text{background:linear-gradient(100deg,#f3cf72,#fff1c2,#c9972c,#f3cf72);background-size:240% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 6s linear infinite}
